@@ -6,25 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ayub Haji</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 <div id="header">
     <div class = "container">
         <nav>
             <ul class="nav-area">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <a href="https://www.linkedin.com/in/ayubmhaji/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/CodeSeeker1"><i class="fa-brands fa-github"></i></a>
             </ul>
         </nav>
         <div class="header-text">
             <h1>Hi, I'm <span> Ayub.</span></h1>
-            <p>Aspiring Information Security Student</p>
+            <p>Information Security Student based in Edmonton,AB</p>
         </div>
     </div>
 </div>
-<!-- --------------about------------- -->
+<!-- --------------About------------- -->
 <div id="about">
     <div class="container">
         <div class="row">
@@ -33,12 +35,7 @@
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About <span>Me</span></h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo animi soluta ratione
-                    quisquam, dicta ab cupiditate iure eaque? Repellendus voluptatum, magni impedit
-                    eaque delectus, beatae maxime temporibus maiores quibusdam quasi.Rem magnam ad
-                    perferendis iusto sint tempora ea voluptatibus iure, animi excepturi modi aut
-                    possimus in hic molestias repellendus illo ullam odit quia velit. Qui expedita sit
-                    quo, maxime molestiae.</p>
+                <p>Welcome to my virtual space! <br> I'm an enthusiastic learner that committed to unraveling the mysteries of information security. My passion lies in understanding the art of securing digital domains and mitigating risks. So, join me on this journey as we navigate this fascinating terrain, where each challenge is an opportunity to fortify our digital world. </p>
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                     <!-- <p class="tab-links">Experience</p> -->
@@ -53,17 +50,58 @@
                 </div>
                 <div class="tab-contents" id="education">
                     <ul>
-                        <li><span>2021 - Present</span><br>Computer Science degree in System and Information Security at MacEwan University</li>
+                        <li><span>2021 - Present</span><br>Computer Science degree in  Information Security and System at MacEwan University</li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
+    
+</div>
+<!-- --------------Projects------------- -->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My <span>Projects</span></h1>
+        <div class="project-list">
+            <div class="project">
+                <img src="Images/Cat Album.jpg">
+                <div class="layer">
+                    <h3>Cat SlideShow Album</h3>
+                    <p>A simple slideshow website made with HTML5,CSS and JavaScript</p>
+                    <a href="https://codeseeker1.github.io/Cat-Album/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>    
+            </div>
+            <div class="project">
+                <img src="Images/Schedule_Planner.JPG">   
+                <div class="layer">
+                    <h3>Schedule Planner App</h3>
+                    <p>A simple event scheduler developed with a team for a hackathon event, made with Python,HTML5,CSS,JavaScript</p>
+                    <a href="https://codeseeker1.github.io/Team_Alpha_Schedule_Planner/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>    
+            </div>
+            <div class="project">
+                <img src="Images/Web_Scaper.jpg">   
+                <div class="layer">
+                    <h3>Job Board Web Scaper App</h3>
+                    <p>Work in Progress....</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>    
+            </div>
+        </div>
+    </div>
+</div>
 
-        function opentab(tabname){
+<div class="footer">
+    <p>Created by Ayub Haji</p>   
+</div>
+ 
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
         for(tablink of tablinks){
             tablink.classList.remove("active-link");
         }
@@ -73,10 +111,9 @@
 
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
-        }
-    </script>
+    }
+    addEventListener("click",)
+</script>
 
-</div>
-    
 </body>
 </html>
