@@ -16,6 +16,21 @@ html{
     scroll-behavior: smooth;
 }
 
+/* Style for WebKit based browsers */
+::-webkit-scrollbar {
+    width: 10px; /* Set the width of the scrollbar */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-image: url(Images/Black_Sand.jpg);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(66, 66, 66); /* Color of the thumb */
+    border-radius: 5px; /* Rounded corners for the thumb */
+  }
+  
+
 #header{
     width: 100%;
     height: 100vh;
