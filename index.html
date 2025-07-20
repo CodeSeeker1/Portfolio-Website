@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-<div id="header">
+<div class="page-wrapper"> 
+    <!-- --------------Header------------- -->
+    <section id="header"> 
     <div class = "container">
         <nav>
             <ul class="nav-area">
@@ -25,10 +27,10 @@
             <p>Information Security Student based in Edmonton, AB</p>
         </div>
     </div>
-</div>
-<!-- --------------About------------- -->
-<div id="about">
-    <div class="container">
+    </section>
+    <!-- --------------About------------- -->
+    <section id="about">  
+        <div class="container">
         <div class="row">
             <div class="about-col-2">
                 <h1 class="sub-title">About <span>Me</span></h1>
@@ -64,11 +66,10 @@
             </div>
         </div>
     </div>
-    
-</div>
-<!-- --------------Projects------------- -->
-<div id="projects">
-    <div class="container">
+    </section>
+    <!-- --------------Projects------------- -->
+    <section id="projects">
+        <div class="container">
         <h1 class="sub-title">My <span>Projects</span></h1>
         <div class="project-list">
             <div class="project">
@@ -115,17 +116,19 @@
                 <img src="Images/Homelab.JPG">   
                 <div class="layer">
                     <h3>Homelab</h3>
+                    <p>Comprehensive documentation of my ongoing homelab project.</p>
                     <a href="https://ayubsec-labs.gitbook.io/ayubsec-labs"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>  
             </div>
     </div>
+    </section>
+
 </div>
 
-<div class="footer">
-    <p>Created by Ayub Haji</p>   
-</div>
- 
 
+<footer class="footer">
+    <p>© 2025 Ayub Haji</p>   
+</footer>
 
 <script>
     var tablinks = document.getElementsByClassName("tab-links");

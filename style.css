@@ -276,10 +276,18 @@ nav a{
     text-align: center;
 }
 
+.page-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+}
+
 .footer{
     width: 100%;
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0;
     font-weight: 300;
     background-image: url(Images/Black_Sand.jpg);
 }
